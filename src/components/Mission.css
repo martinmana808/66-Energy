@@ -1,0 +1,28 @@
+.mission__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mission__manifesto blockquote {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.mission__manifesto p {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .mission__manifesto blockquote {
+    font-size: 2rem;
+  }
+}

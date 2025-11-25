@@ -1,0 +1,36 @@
+.section {
+  padding: 4rem 1rem;
+  width: 100%;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.section--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section--default {
+  background-color: var(--color-bg);
+}
+
+.section--light {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-bg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 2rem;
+  }
+}
