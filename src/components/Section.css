@@ -1,5 +1,5 @@
 .section {
-  padding: 4rem 1rem;
+  padding: 5rem 1.5rem;
   width: 100%;
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
@@ -24,13 +24,19 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
 }
 
 @media (min-width: 768px) {
   .section {
-    padding: 6rem 2rem;
+    padding: 8rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 10rem 3rem;
   }
 }

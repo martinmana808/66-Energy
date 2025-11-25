@@ -1,18 +1,18 @@
 .mission__content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
 .mission__manifesto blockquote {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.5;
   color: var(--color-text);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   position: relative;
-  padding: 0 1rem;
+  padding: 0 1.5rem 0 2.5rem;
 }
 
 .mission__manifesto blockquote::before {
@@ -21,19 +21,25 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 4px;
+  width: 5px;
   background: var(--gradient-primary);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .mission__manifesto p {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: var(--color-text-muted);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 @media (min-width: 768px) {
   .mission__manifesto blockquote {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    padding: 0 2rem 0 3rem;
+    margin-bottom: 3.5rem;
+  }
+  
+  .mission__manifesto p {
+    font-size: 1.3rem;
   }
 }
