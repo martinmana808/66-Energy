@@ -15,6 +15,17 @@
   padding: 0 1rem;
 }
 
+.mission__manifesto blockquote::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
 .mission__manifesto p {
   font-size: 1.125rem;
   color: var(--color-text-muted);

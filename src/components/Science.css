@@ -8,13 +8,41 @@
 .science-card {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.science-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 1px;
+  background: var(--gradient-primary);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.science-card:hover::before {
+  opacity: 1;
+}
+
+.science-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(204, 255, 0, 0.15);
 }
 
 .science-card h3 {
   font-size: 1.5rem;
-  color: var(--color-accent);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 0.5rem;
 }
 
